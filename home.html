@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Payoo MFS Function </title>
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+   <main class="flex justify-center">
+      <div class="mockup-phone">
+         <div class="mockup-phone-camera"></div>
+         <div class="mockup-phone-display bg-white grid place-content-center">
+
+            <!-- account balance -->
+            <div class="stats shadow">
+               <div class="stat">
+                  <div  class="stat-title">Account Balance </div>
+                  <div id="account-balance" class="stat-value">9400</div>
+               </div>
+            </div>
+            <div class="divider"></div>
+            <!-- features start  -->
+             <div>
+               <button id="show-add-money-form" class="btn btn-lg">Add Money</button>
+               <button id="show-cash-out-form" class="btn btn-lg">Cash Out</button>
+               <button id="show-transaction-history" class="btn btn-lg">Transaction</button>
+             </div>
+             <!-- features end  -->
+              <div class="divider"></div>
+              <!-- add money form start -->
+                   <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Add Money Amount</label>
+          <input type="text" id="input-add-money" class="input" placeholder="Amount" />
+          <label class="label">Pin Number</label>
+          <input type="password" id="input-pin-number" class="input" placeholder="Pin Number" />
+          
+          <button id="btn-ad-money" class="btn btn-neutral mt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+               <!-- add money form end  -->
+                <!-- cash out form start -->
+                    <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Cash Out Amount</label>
+          <input type="text" id="input-cash-out" class="input" placeholder="Amount" />
+          <label class="label">Pin Number</label>
+          <input type="password" id="input-cash-out-pin" class="input" placeholder="Pin Number" />
+          
+          <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+        </fieldset>
+      </div>
+    </div>
+                <!-- cash out form end -->
+
+                <!-- transaction start -->
+                  <div id="transaction-section" class="hidden ">
+                     <h2 class="text-3xl text-center">Transaction History</h2>
+                     <!-- akhane transaction gulo append hobe  -->
+                     <div id="transaction-container"  >
+
+
+                     </div>
+                  </div>
+
+                <!-- transaction End -->
+
+         </div>
+      </div>
+   </main> 
+
+   <script src="js/features.js"></script>
+  <script src="js/cashOut.js"></script>
+   <script src="js/addMoney2.js"></script>
+    <script src="js/utilities2.js"></script>
+  
+   
+   
+   
+</body>
+
+</html>
